@@ -1,13 +1,15 @@
-﻿import numpy as np
+"""
+Created on Tue April 14 10:41:28 2021
+@author: ZhangTeng
+"""
+
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor
 from TwoStageTrAdaBoostR2 import TwoStageTrAdaBoostR2
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
-from sklearn.ensemble import AdaBoostRegressor
-
-from sklearn.ensemble import RandomForestRegressor
 import time
 file1 = "errordata/Error.csv"
 data = np.array(pd.read_csv(file1))
